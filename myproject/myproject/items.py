@@ -1,5 +1,6 @@
 import scrapy
 
-class Headline(scrapy.Item):
-    title = scrapy.Field()
-    body = scrapy.Field()
+class Table(scrapy.Item):
+    team = scrapy.Field()
+    key = scrapy.Field()
+    value = scrapy.Field()

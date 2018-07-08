@@ -1,0 +1,11 @@
+import scrapy
+
+class NewsSpider(scrapy.Spider):
+# Spider�̖��
+    name = 'news'
+# �N���[���Ώۂ̃h���C�����X�g
+    allowed_domains = ['news.yahoo.co.jp']
+# �N���[�����J�n����URK�̃��X�g
+    start_urls = ['http://news.yahoo.co.jp/']
+
+    def parse(sel
